@@ -1,5 +1,17 @@
 package br.com.iann.schmith.pw3hasfood.entity;
 
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+
 @Getter
 @Setter
 @Table(name = "TBL_PEDIDO")
@@ -7,7 +19,7 @@ package br.com.iann.schmith.pw3hasfood.entity;
 @Entity
 public class Pedido {
 	
-	@ID
+	@Id
 	@Column(name = "ID_PEDIDO")
 	private long id;
 	
